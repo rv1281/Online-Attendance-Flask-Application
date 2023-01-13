@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{%block title %} Home {% endblock %}
+{%block content %}
+<body>
+    <div class="text-center mt-5">
+        <h1 class="display-3 font-weight-bold text-primary">Welcome to the site!</h1>
+        <p class="lead font-weight-light text-secondary">Please login or sign up to operate the site.</p>
+    </div>
+    <style>
+        .image-container {
+          display: flex;
+          justify-content: center;
+        }
+        .image-container img {
+          width: 50%;
+        }
+      </style>
+      
+      <div class="image-container">
+        <img src="{{ url_for('static', filename='image1.jpg') }}" alt="Image 1">
+      </div>
+      
+</body>
+{% endblock %}
