@@ -130,6 +130,9 @@ def add_student():
         if not roll_number.isdigit():
             flash('Roll number must be a valid integer', category='error')
             return redirect(url_for('auth.add_student'))
+        if roll_number <= '0':
+            flash('Roll number cannot be less than or equal to 0')
+            return redirect(url_for('auth.add_student'))
         student = Student.query.filter_by(roll_number=roll_number).first()
         if student:
             flash('A student with this roll number already exists', category='error')
