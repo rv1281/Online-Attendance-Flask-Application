@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{%block title %} Dashboard {% endblock %}
+{% block content %}
+<div class="text-center container mt-5">
+  <h1 class="display-4 mb-3">Welcome {{ user.firstName }} {{ user.lastName }}</h1>
+  <div class="row mt-5">
+    <div class="col-md-4">
+      <a href="/mark_attendance" class="btn btn-primary btn-lg btn-block mb-3">Mark Attendance</a>
+    </div>
+    <div class="col-md-4">
+      <a href="/view_attendance" class="btn btn-primary btn-lg btn-block mb-3">View Attendance</a>
+    </div>
+    <div class="col-md-4">
+      <a href="/add_student" class="btn btn-primary btn-lg btn-block mb-3">Add Student</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
