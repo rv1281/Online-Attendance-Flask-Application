@@ -57,6 +57,18 @@ It's a simple project that can be used as a starting point for a more complex on
 ## Database
 The application uses SQLite as its database and creates the database automatically as soon as the main.py script is run. The teacher's name, email, and password are stored in the database upon sign up, and the students' names and roll numbers are added to the database when the teacher logs in and adds them. The attendance is also stored in the database.
 
+## Screenshots
+
+![Homepage](https://github.com/rv1281/Online-Attendance-Flask-Application/blob/main/screenshots/Homepage.jpg)
+![SignUp](https://github.com/rv1281/Online-Attendance-Flask-Application/blob/main/screenshots/SignUp.jpg)
+![Login](https://github.com/rv1281/Online-Attendance-Flask-Application/blob/main/screenshots/Login.jpg)
+![Dashboard](https://github.com/rv1281/Online-Attendance-Flask-Application/blob/main/screenshots/Dashboard.jpg)
+![Add Student](https://github.com/rv1281/Online-Attendance-Flask-Application/blob/main/screenshots/Add%20Student.jpg)
+![Mark Attendance](https://github.com/rv1281/Online-Attendance-Flask-Application/blob/main/screenshots/MarkAttendance.jpg)
+![View Attendance](https://github.com/rv1281/Online-Attendance-Flask-Application/blob/main/screenshots/View%20Attendance.jpg)
+![Database-User](https://github.com/rv1281/Online-Attendance-Flask-Application/blob/main/screenshots/Database.jpg)
+![Database-Student](https://github.com/rv1281/Online-Attendance-Flask-Application/blob/main/screenshots/Database2.jpg)
+![Database-Attendance](https://github.com/rv1281/Online-Attendance-Flask-Application/blob/main/screenshots/Database3.jpg)
 ## Contributions
 
 The Online Attendance Flask Application is open source and always looking for contributions to make it better. Whether you are a beginner or an experienced developer, you can help by fixing bugs, adding new features, or improving documentation.
