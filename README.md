@@ -59,7 +59,7 @@ The application uses SQLite as its database and creates the database automatical
 
 ## Screenshots
 
-![Homepage](https://github.com/rv1281/Online-Attendance-Flask-Application/blob/main/screenshots/Homepage.jpg)
+![Homepage](https://github.com/rv1281/Online-Attendance-Flask-Application/blob/main/screenshots/Homepage.jpg) Homepage
 ![SignUp](https://github.com/rv1281/Online-Attendance-Flask-Application/blob/main/screenshots/SignUp.jpg)
 ![Login](https://github.com/rv1281/Online-Attendance-Flask-Application/blob/main/screenshots/Login.jpg)
 ![Dashboard](https://github.com/rv1281/Online-Attendance-Flask-Application/blob/main/screenshots/Dashboard.jpg)
