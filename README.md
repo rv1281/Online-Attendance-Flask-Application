@@ -15,6 +15,7 @@ The Online Attendance Flask Application uses the following technologies:
 - Flask-SQLAlchemy: a Flask extension that provides support for SQLAlchemy, a SQL toolkit and Object-Relational Mapping (ORM) library for Python
 - SQLAlchemy: a SQL toolkit and ORM library for Python
 - Werkzeug: a WSGI utility library for Python used by Flask as the underlying technology for the development server and debugger
+
 ## Installation
 
 Install my-project with npm
@@ -46,6 +47,7 @@ Install my-project with npm
 ```
     
 ## Usage
+
 After running the application, open your web browser and go to http://localhost:5000. From there, you can sign up as a teacher and log in to the application. You will then be able to add students and mark their attendance.
 The application has a simple user interface that allows the teacher to add students, view their profiles, and mark their attendance. The attendance information is stored in a SQLite database, which is managed using SQLAlchemy.
 
@@ -54,7 +56,9 @@ The Flask-Login module is used to handle user authentication, and users can log 
 To run the application, simply install the required packages using pip, and then run the app.py file. The application will be available at http://localhost:5000.
 
 It's a simple project that can be used as a starting point for a more complex online attendance system. With some modifications and additional features, it can be turned into a full-fledged application that can be used by schools, colleges, or any other organizations to manage their student attendance.
+
 ## Database
+
 The application uses SQLite as its database and creates the database automatically as soon as the main.py script is run. The teacher's name, email, and password are stored in the database upon sign up, and the students' names and roll numbers are added to the database when the teacher logs in and adds them. The attendance is also stored in the database.
 
 ## Screenshots
@@ -63,16 +67,38 @@ Homepage
 
 ![Homepage](https://github.com/rv1281/Online-Attendance-Flask-Application/blob/main/screenshots/Homepage.jpg)
 
+Sign-Up
 
 ![SignUp](https://github.com/rv1281/Online-Attendance-Flask-Application/blob/main/screenshots/SignUp.jpg)
+
+Login
+
 ![Login](https://github.com/rv1281/Online-Attendance-Flask-Application/blob/main/screenshots/Login.jpg)
+
+User-Dashboard
+
 ![Dashboard](https://github.com/rv1281/Online-Attendance-Flask-Application/blob/main/screenshots/Dashboard.jpg)
+
+Add-Student Page
+
 ![Add Student](https://github.com/rv1281/Online-Attendance-Flask-Application/blob/main/screenshots/Add%20Student.jpg)
+
+Mark Attendance Page
+
 ![Mark Attendance](https://github.com/rv1281/Online-Attendance-Flask-Application/blob/main/screenshots/MarkAttendance.jpg)
+
+View Attendance Page
+
 ![View Attendance](https://github.com/rv1281/Online-Attendance-Flask-Application/blob/main/screenshots/View%20Attendance.jpg)
+
+Databases
+
 ![Database-User](https://github.com/rv1281/Online-Attendance-Flask-Application/blob/main/screenshots/Database.jpg)
+
 ![Database-Student](https://github.com/rv1281/Online-Attendance-Flask-Application/blob/main/screenshots/Database2.jpg)
+
 ![Database-Attendance](https://github.com/rv1281/Online-Attendance-Flask-Application/blob/main/screenshots/Database3.jpg)
+
 ## Contributions
 
 The Online Attendance Flask Application is open source and always looking for contributions to make it better. Whether you are a beginner or an experienced developer, you can help by fixing bugs, adding new features, or improving documentation.
