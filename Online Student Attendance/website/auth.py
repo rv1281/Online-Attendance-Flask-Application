@@ -114,7 +114,8 @@ def view_attendance():
             "roll_number": student.roll_number,
             "attended": attended,
             "missed": missed,
-            "percentage": percentage
+            "percentage": percentage,
+            "id": student.id
         })
     return render_template('view_attendance.html', user=current_user, attendance_data=attendance_data)
 
@@ -144,17 +145,15 @@ def add_student():
         return redirect(url_for('auth.add_student'))
     return render_template('add_student.html', user=current_user)
 
-@auth.route('/delete-student', methods=['GET', 'POST'])
-def delete_student():
-    student = request.get_json()
-    studentId = student['studentId']
-    student = Student.query.get(studentId)
-    print(student)
+@auth.route('/delete-student/<int:id>', methods=['POST'])
+def delete_student(id):
+    student = Student.query.get(id)
     if student:
         if student.user_id == current_user.id:
             db.session.delete(student)
             db.session.commit()
+            flash('Student deleted successfully', category='success')
         else:
             flash('You are not authorized to delete this student.', 'danger')
 
-    return jsonify({})
+    return redirect(request.referrer)

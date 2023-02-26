@@ -23,12 +23,13 @@
           <td>{{ student.missed }}</td>
           <td>{{ "{:.2f}%".format(student.percentage) }}</td>
           <td>
-            <a href="/delete-student" class="btn btn-danger" onClick="deleteStudent({{ student.id }})">Delete</a>
-          </td>          
-          </button>
+            <form action="/delete-student/{{ student.id }}" method="post" onsubmit="return confirm('Are you sure you want to delete this student?');">
+              <input type="hidden" name="_method" value="DELETE">
+              <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+          </td>
         </tr>
       {% endfor %}
     </tbody>
   </table>
-  
 {% endblock %}
